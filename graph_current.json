@@ -1,0 +1,510 @@
+{
+  "USD-forex": {
+    "GBP-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.753843,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "CNY-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 7.2958,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "EUR-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.879321,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "JPY-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 142.3929,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 82.174304,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      },
+      {
+        "name": "MOEX Indicative",
+        "rate": 81.1371,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "RSD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 103.28,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "KZT-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 523.173589,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "XDR-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.718102,
+        "direct": true,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ]
+  },
+  "GBP-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.753843,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 107.5635,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "CNY-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 7.2958,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 11.038,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "EUR-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.879321,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 92.2232,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "JPY-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 142.3929,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 1.7550633577872163,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "RUB-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 82.174304,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      },
+      {
+        "name": "MOEX Indicative",
+        "rate": 81.1371,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "EUR-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 92.2232,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "KZT-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 6.25,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "GBP-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 107.5635,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "CNY-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 11.038,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ],
+    "JPY-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 1.7550633577872163,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "RSD-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 103.28,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ]
+  },
+  "KZT-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 523.173589,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ],
+    "RUB-forex": [
+      {
+        "name": "MOEX Indicative",
+        "rate": 6.25,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:03.065534"
+      }
+    ]
+  },
+  "RUB-bank": {
+    "USD-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 87.1,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 84.13,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "EUR-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 99.08,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 95.83,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "KZT-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 0.1668,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 6.24,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "USD-crypto": [
+      {
+        "name": "Bybit P2P",
+        "rate": 83.486,
+        "direct": false,
+        "datetime": "2025-04-18T19:00:03.420524"
+      }
+    ],
+    "EUR-cash": [
+      {
+        "name": "Korona Pay",
+        "rate": 98.2763,
+        "direct": false,
+        "datetime": "2025-04-18T19:00:40.394711"
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.2307973518756437,
+        "direct": true,
+        "datetime": "2025-04-18T05:17:02.089479+00:00"
+      }
+    ]
+  },
+  "USD-bank": {
+    "RUB-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 80.53,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 80.36,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "KZT-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 521.0,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "EUR-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 1.1479,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 102.06930720304632,
+        "direct": true,
+        "datetime": "2025-04-18T05:17:00.630145+00:00"
+      }
+    ]
+  },
+  "EUR-bank": {
+    "RUB-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 91.61,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 91.22,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "KZT-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 592.0,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "USD-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 1.1279,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.68546879453892,
+        "direct": true,
+        "datetime": "2025-04-18T05:17:00.976540+00:00"
+      }
+    ]
+  },
+  "KZT-bank": {
+    "RUB-bank": [
+      {
+        "name": "Cifra RU",
+        "rate": 0.1495,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:08.059672"
+      },
+      {
+        "name": "Freedom KZ",
+        "rate": 6.49,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "USD-crypto": [
+      {
+        "name": "Bybit P2P",
+        "rate": 523.658,
+        "direct": true,
+        "datetime": "2025-04-18T19:00:03.420524"
+      }
+    ],
+    "USD-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 526.0,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "EUR-bank": [
+      {
+        "name": "Freedom KZ",
+        "rate": 598.0,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:10.418730"
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.19497479833697873,
+        "direct": true,
+        "datetime": "2025-04-18T05:17:01.613255+00:00"
+      }
+    ]
+  },
+  "EUR-cash": {
+    "RSD-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 116.5,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ]
+  },
+  "RSD-cash": {
+    "EUR-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 117.95,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ],
+    "USD-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 110.55,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ],
+    "RUB-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 1.37,
+        "direct": false,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ]
+  },
+  "USD-cash": {
+    "RSD-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 106.32499999999999,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ]
+  },
+  "RUB-cash": {
+    "RSD-cash": [
+      {
+        "name": "Cash Exch",
+        "rate": 1.17,
+        "direct": true,
+        "datetime": "2025-04-18T19:10:09.303053"
+      }
+    ]
+  },
+  "USD-crypto": {
+    "RUB-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 81.804,
+        "direct": true,
+        "datetime": "2025-04-18T19:00:03.420524"
+      }
+    ],
+    "KZT-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 527.159,
+        "direct": true,
+        "datetime": "2025-04-18T19:00:03.420524"
+      }
+    ]
+  },
+  "XDR-forex": {
+    "USD-forex": [
+      {
+        "name": "OpenExchangeRates",
+        "rate": 0.718102,
+        "direct": false,
+        "datetime": "2025-04-18T17:20:49.123543"
+      }
+    ]
+  }
+}
