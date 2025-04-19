@@ -5,29 +5,27 @@
 
 <style>
 :root {--themed-text: color-mix(in srgb, CanvasText, Canvas 10%);}
+html { /* Added */
+    height: 100%;
+}
 body {
     color-scheme: light dark;
     background-color: color-mix(in srgb, Canvas, CanvasText 5%); 
     color: var(--themed-text);
     margin: 0; /* Kept */
-    position: relative; /* Added */
-    min-height: 100vh; /* Added - ensures body takes full height for absolute positioning context */
+    min-height: 100%; /* Changed */
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
 }
 pre {display: inline-block; text-align: left}
 a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-color: transparent; text-decoration: underline}
-.centered-content { /* Added */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 .premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: IBM Plex Mono; font-weight: 300}
 .accent {color: CanvasText; font-weight: 500}
 .graph {text-shadow: 0.5px 0px 0px color-mix(in srgb, CanvasText, Canvas 5%)}
 </style>
 
-<div class="centered-content">
+<div style="text-align: center;">
     <pre><span class="premain">     22     29     05     12     19
 
                            1.22     
@@ -35,7 +33,7 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
                        1.19         
 
        Korona      P2P      Forex
-      -2% 1.19  +2% 1.24  +4% 1.25 
+      -2% 1.19  +3% 1.24  +4% 1.25 
 ————————————————————————————————————————
                                 96.2
 <span class="accent"> ₽<€   <span class="graph">               ▅▃▅▃▃▃▆▆▅▅▆▆ 96</span>.2</span>
@@ -54,5 +52,5 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
 <span class="accent"> EUR                         ▂▇▇▆▆ </span>
 <span class="accent"> CNY                         ▄▄▅▅▅</span>
 ————————————————————————————————————————
-          Updated: 19.04 11:25</span></pre>
+          Updated: 19.04 11:32</span></pre>
 </div>
