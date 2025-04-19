@@ -5,7 +5,16 @@
 
 <style>
 :root {--themed-text: color-mix(in srgb, CanvasText, Canvas 10%);}
-body {color-scheme: light dark;background-color: color-mix(in srgb, Canvas, CanvasText 5%); color: var(--themed-text)}
+body {
+    color-scheme: light dark;
+    background-color: color-mix(in srgb, Canvas, CanvasText 5%); 
+    color: var(--themed-text);
+    display: flex; /* Added */
+    align-items: center; /* Added */
+    justify-content: center; /* Added */
+    min-height: 100vh; /* Added */
+    margin: 0; /* Added */
+}
 pre {display: inline-block; text-align: left}
 a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-color: transparent; text-decoration: underline}
 .premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: IBM Plex Mono; font-weight: 300}
@@ -40,5 +49,5 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
 <span class="accent"> EUR                         ▂▇▇▆▆ </span>
 <span class="accent"> CNY                         ▄▄▅▅▅</span>
 ————————————————————————————————————————
-          Updated: 19.04 11:20</span></pre>
+          Updated: 19.04 11:22</span></pre>
 </div>
