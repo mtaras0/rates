@@ -1,152 +1,141 @@
-{
-  "USD-crypto": {
-    "RUB-bank": [
-      {
-        "name": "Bybit P2P",
-        "rate": 94.802829,
-        "direct": true,
-        "updates_amount": 120
-      }
+[
+    "USD-crypto",
+    "RUB-bank",
+    "KZT-bank",
+    "USD-cash",
+    "KZT-cash",
+    "RUB-cash",
+    "USD-forex",
+    "RUB-forex",
+    "EUR-forex",
+    "CNY-forex",
+    "GBP-forex",
+    [
+        "USD-forex",
+        "KZT-forex",
+        "OpenExchangeRates",
+        446.180048,
+        true,
+        1
     ],
-    "KZT-bank": [
-      {
-        "name": "Bybit P2P",
-        "rate": 452.972738,
-        "direct": true,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "RUB-bank": {
-    "USD-crypto": [
-      {
-        "name": "Bybit P2P",
-        "rate": 95.969417,
-        "direct": false,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "KZT-bank": {
-    "USD-crypto": [
-      {
-        "name": "Bybit P2P",
-        "rate": 454.10126,
-        "direct": false,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "USD-cash": {
-    "KZT-cash": [
-      {
-        "name": "Cash Exch",
-        "rate": 446.427498,
-        "direct": true,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "KZT-cash": {
-    "USD-cash": [
-      {
-        "name": "Cash Exch",
-        "rate": 448.496668,
-        "direct": false,
-        "updates_amount": 120
-      }
+    [
+        "KZT-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        446.180048,
+        false,
+        1
     ],
-    "RUB-cash": [
-      {
-        "name": "Cash Exch",
-        "rate": 4.847333,
-        "direct": false,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "RUB-cash": {
-    "KZT-cash": [
-      {
-        "name": "Cash Exch",
-        "rate": 4.763668,
-        "direct": false,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "USD-forex": {
-    "RUB-forex": [
-      {
-        "name": "MOEX Indicative",
-        "rate": 92.281749,
-        "direct": true,
-        "updates_amount": 120
-      }
+    [
+        "USD-forex",
+        "XDR-forex",
+        "OpenExchangeRates",
+        0.755096,
+        true,
+        1
     ],
-    "EUR-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.921539,
-        "direct": true,
-        "updates_amount": 10
-      }
+    [
+        "XDR-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        0.755096,
+        false,
+        1
     ],
-    "CNY-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 7.2351,
-        "direct": true,
-        "updates_amount": 10
-      }
+    [
+        "USD-forex",
+        "RUB-forex",
+        "OpenExchangeRates",
+        92.250923,
+        true,
+        1
     ],
-    "GBP-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.789953,
-        "direct": true,
-        "updates_amount": 10
-      }
+    [
+        "RUB-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        92.250923,
+        false,
+        1
+    ],
+    [
+        "USD-forex",
+        "EUR-forex",
+        "OpenExchangeRates",
+        0.922801,
+        true,
+        1
+    ],
+    [
+        "EUR-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        0.922801,
+        false,
+        1
+    ],
+    [
+        "USD-forex",
+        "JPY-forex",
+        "OpenExchangeRates",
+        151.2975,
+        true,
+        1
+    ],
+    [
+        "JPY-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        151.2975,
+        false,
+        1
+    ],
+    [
+        "USD-forex",
+        "GBP-forex",
+        "OpenExchangeRates",
+        0.791174,
+        true,
+        1
+    ],
+    [
+        "GBP-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        0.791174,
+        false,
+        1
+    ],
+    [
+        "USD-forex",
+        "RSD-forex",
+        "OpenExchangeRates",
+        108.092,
+        true,
+        1
+    ],
+    [
+        "RSD-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        108.092,
+        false,
+        1
+    ],
+    [
+        "USD-forex",
+        "CNY-forex",
+        "OpenExchangeRates",
+        7.2349,
+        true,
+        1
+    ],
+    [
+        "CNY-forex",
+        "USD-forex",
+        "OpenExchangeRates",
+        7.2349,
+        false,
+        1
     ]
-  },
-  "RUB-forex": {
-    "USD-forex": [
-      {
-        "name": "MOEX Indicative",
-        "rate": 92.281749,
-        "direct": false,
-        "updates_amount": 120
-      }
-    ]
-  },
-  "EUR-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.921539,
-        "direct": false,
-        "updates_amount": 10
-      }
-    ]
-  },
-  "CNY-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 7.2351,
-        "direct": false,
-        "updates_amount": 10
-      }
-    ]
-  },
-  "GBP-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.789953,
-        "direct": false,
-        "updates_amount": 10
-      }
-    ]
-  }
-}
+]
