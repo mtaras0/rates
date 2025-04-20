@@ -82,68 +82,30 @@
         "rate": 88.824117,
         "direct": true,
         "updates_amount": 120
-      },
-      {
-        "name": "OpenExchangeRates",
-        "rate": 87.618535,
-        "direct": true,
-        "updates_amount": 1
       }
     ],
     "EUR-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.9227182727272727,
+        "rate": 0.922735,
         "direct": true,
-        "updates_amount": 11
+        "updates_amount": 10
       }
     ],
     "CNY-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 7.257787272727271,
+        "rate": 7.257516,
         "direct": true,
-        "updates_amount": 11
+        "updates_amount": 10
       }
     ],
     "GBP-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.7750826363636364,
+        "rate": 0.774915,
         "direct": true,
-        "updates_amount": 11
-      }
-    ],
-    "JPY-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 147.078,
-        "direct": true,
-        "updates_amount": 1
-      }
-    ],
-    "RSD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 108.036,
-        "direct": true,
-        "updates_amount": 1
-      }
-    ],
-    "KZT-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 490.92997,
-        "direct": true,
-        "updates_amount": 1
-      }
-    ],
-    "XDR-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.751671,
-        "direct": true,
-        "updates_amount": 1
+        "updates_amount": 10
       }
     ]
   },
@@ -154,12 +116,6 @@
         "rate": 88.824117,
         "direct": false,
         "updates_amount": 120
-      },
-      {
-        "name": "OpenExchangeRates",
-        "rate": 87.618535,
-        "direct": false,
-        "updates_amount": 1
       }
     ]
   },
@@ -167,9 +123,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.9227182727272727,
+        "rate": 0.922735,
         "direct": false,
-        "updates_amount": 11
+        "updates_amount": 10
       }
     ]
   },
@@ -177,9 +133,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 7.257787272727271,
+        "rate": 7.257516,
         "direct": false,
-        "updates_amount": 11
+        "updates_amount": 10
       }
     ]
   },
@@ -187,49 +143,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.7750826363636364,
+        "rate": 0.774915,
         "direct": false,
-        "updates_amount": 11
-      }
-    ]
-  },
-  "JPY-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 147.078,
-        "direct": false,
-        "updates_amount": 1
-      }
-    ]
-  },
-  "RSD-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 108.036,
-        "direct": false,
-        "updates_amount": 1
-      }
-    ]
-  },
-  "KZT-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 490.92997,
-        "direct": false,
-        "updates_amount": 1
-      }
-    ]
-  },
-  "XDR-forex": {
-    "USD-forex": [
-      {
-        "name": "OpenExchangeRates",
-        "rate": 0.751671,
-        "direct": false,
-        "updates_amount": 1
+        "updates_amount": 10
       }
     ]
   }
