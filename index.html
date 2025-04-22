@@ -2,35 +2,26 @@
 @font-face {
     font-family: 'Cascadia Mono';
     src: url('./fonts/CascadiaMono.ttf') format('truetype-variations');
-    font-weight: 100 700; /* Define the weight range */
-    font-style: normal; /* Define supported styles */
-}
-@font-face {
-    font-family: 'Cascadia Mono';
-    src: url('./fonts/CascadiaMonoItalic.ttf') format('truetype-variations');
-    font-weight: 100 700; /* Define the weight range */
-    font-style: italic; /* Define supported styles */
+    font-weight: 100 700;
+    font-style: normal;
 }
 
 :root {--themed-text: color-mix(in srgb, CanvasText, Canvas 10%);}
-html { /* Added */
-    height: 100%;
-}
+html {height: 100%;}
 body {
     color-scheme: light dark;
     background-color: color-mix(in srgb, Canvas, CanvasText 5%); 
     color: var(--themed-text);
-    margin: 0; /* Kept */
-    min-height: 100%; /* Changed */
-    display: flex; /* Added */
-    align-items: center; /* Added */
-    justify-content: center; /* Added */
+    margin: 0; 
+    min-height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 pre {display: inline-block; text-align: left}
 a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-color: transparent; text-decoration: underline}
-.premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: 'Cascadia Mono', monospace; font-weight: 300; font-feature-settings: 'ss01', 'ss19';} /* Updated font, weight, added features */
-.accent {color: CanvasText; font-weight: 600; font-family: 'Cascadia Mono', monospace; font-feature-settings: 'ss01', 'ss19';} /* Updated font, added features */
-.fancy {font-family: 'Cascadia Mono', monospace; font-weight: 300; font-style: italic; font-feature-settings: 'calt', 'ss01', 'ss19';} /* Renamed from italicized */
+.premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: 'Cascadia Mono', monospace; font-weight: 300; font-feature-settings: 'ss01', 'ss19';}
+.accent {color: CanvasText; font-weight: 600; font-family: 'Cascadia Mono', monospace; font-feature-settings: 'ss01', 'ss19';}
 .graph {text-shadow: 0.5px 0px 0px color-mix(in srgb, CanvasText, Canvas 5%)}
 </style>
 
@@ -61,5 +52,5 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
 <span class="accent"> RUB  <span class="graph">▆▇▇▇▇▇▇▇▅▅▄▅▅▅▆▃▄▂▂▂▂▂▆▅▅▇▆▇▇▇</span> </span>
 <span class="accent"> RSD  <span class="graph">▄▄▄▄▄▄▄▄▅▄▃▆▅▅▅▅▆▄▆▆▆▆▅▆▆▆▆▆▆▆</span></span>
 ──────────────────────────────────────────
-<span class="fancy">           Updated: 22.04 14:35</span></span></pre>
+           Updated: 22.04 14:46</span></pre>
 </div>
