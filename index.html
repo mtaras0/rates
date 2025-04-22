@@ -1,16 +1,9 @@
 <style>
 @font-face {
     font-family: 'Cascadia Mono';
-    src: url('./fonts/CascadiaMono-Light.otf') format('opentype');
-    font-weight: 300; /* Assuming Light corresponds to 300 */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Cascadia Mono';
-    src: url('./fonts/CascadiaMono-SemiBold.otf') format('opentype');
-    font-weight: 600; /* Assuming Semibold corresponds to 600 */
-    font-style: normal;
+    src: url('../fonts/CascadiaMono.ttf') format('truetype-variations');
+    font-weight: 100 700; /* Define the weight range */
+    font-style: normal italic; /* Define supported styles */
 }
 
 :root {--themed-text: color-mix(in srgb, CanvasText, Canvas 10%);}
@@ -29,8 +22,9 @@ body {
 }
 pre {display: inline-block; text-align: left}
 a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-color: transparent; text-decoration: underline}
-.premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: 'Cascadia Mono', monospace; font-weight: 300} /* Updated font-family and weight */
-.accent {color: CanvasText; font-weight: 600; font-family: 'Cascadia Mono', monospace;} /* Updated font-family */
+.premain {font-size: clamp(0px, 3.75vw, 2.35vh); line-height: 1.5; font-family: 'Cascadia Mono', monospace; font-weight: 300; font-feature-settings: 'ss01', 'ss19';} /* Updated font, weight, added features */
+.accent {color: CanvasText; font-weight: 600; font-family: 'Cascadia Mono', monospace; font-feature-settings: 'ss01', 'ss19';} /* Updated font, added features */
+.fancy {font-family: 'Cascadia Mono', monospace; font-weight: 300; font-style: italic; font-feature-settings: 'ss01', 'ss19';} /* Renamed from italicized */
 .graph {text-shadow: 0.5px 0px 0px color-mix(in srgb, CanvasText, Canvas 5%)}
 </style>
 
@@ -47,7 +41,7 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
                                 95.8  
 <span class="accent"> ₽←€  <span class="graph">               ▅▃▄▃▃▃▅▆▅▅▆▆▆▅▅</span> 96.8</span>
                      98.5             
-      P2P -4% 93.4   Korona +4% 100
+      P2P -4% 93.5   Korona +4% 100
 ──────────────────────────────────────────
                               84.0    
 <span class="accent"> ₽←$  <span class="graph">               ▁▁▁▅▅▅▇█▇▇█████</span> 84.0</span>
@@ -61,5 +55,5 @@ a:link, a:visited, a:hover, a:active {color: var(--themed-text); background-colo
 <span class="accent"> RUB  <span class="graph">▆▇▇▇▇▇▇▇▅▅▄▅▅▅▆▃▄▂▂▂▂▂▆▅▅▇▆▇▇▇</span> </span>
 <span class="accent"> RSD  <span class="graph">▄▄▄▄▄▄▄▄▅▄▃▆▅▅▅▅▆▄▆▆▆▆▅▆▆▆▆▆▆▆</span></span>
 ──────────────────────────────────────────
-           Updated: 22.04 13:50</span></pre>
+<span class="fancy">           Updated: 22.04 14:05</span></span></pre>
 </div>
