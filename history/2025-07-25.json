@@ -113,9 +113,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 83.7,
+        "rate": 83.35,
         "direct": false,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "USD-bank": [
@@ -173,9 +173,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 541.2099999999999,
+        "rate": 541.0308333333332,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "RUB-bank": [
@@ -214,6 +214,14 @@
       {
         "name": "Bybit P2P",
         "rate": 549.4483333333334,
+        "direct": true,
+        "updates_amount": 2
+      }
+    ],
+    "RUB-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 80.295,
         "direct": true,
         "updates_amount": 1
       }
