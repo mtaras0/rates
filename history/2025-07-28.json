@@ -113,9 +113,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 83.68358333333335,
+        "rate": 83.65286666666668,
         "direct": false,
-        "updates_amount": 4
+        "updates_amount": 5
       }
     ],
     "EUR-cash": [
@@ -137,7 +137,7 @@
         "name": "Cifra RU",
         "rate": 0.1543,
         "direct": false,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "USD-bank": [
@@ -151,7 +151,7 @@
         "name": "Cifra RU",
         "rate": 84.08,
         "direct": false,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "EUR-bank": [
@@ -165,7 +165,7 @@
         "name": "Cifra RU",
         "rate": 98.11,
         "direct": false,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   },
@@ -173,9 +173,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 536.3014437645687,
+        "rate": 536.026955011655,
         "direct": true,
-        "updates_amount": 4
+        "updates_amount": 5
       }
     ],
     "USD-bank": [
@@ -205,7 +205,7 @@
         "name": "Cifra RU",
         "rate": 0.1383,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   },
@@ -213,9 +213,17 @@
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 544.9439423076924,
+        "rate": 545.1053076923077,
         "direct": true,
-        "updates_amount": 4
+        "updates_amount": 5
+      }
+    ],
+    "RUB-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 79.1,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -295,7 +303,7 @@
         "name": "Cifra RU",
         "rate": 76.58,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "EUR-bank": [
@@ -335,7 +343,7 @@
         "name": "Cifra RU",
         "rate": 90.29,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   }
