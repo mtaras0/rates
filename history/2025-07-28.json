@@ -113,9 +113,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 83.736,
+        "rate": 83.73133333333334,
         "direct": false,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "EUR-cash": [
@@ -132,12 +132,24 @@
         "rate": 6.69,
         "direct": true,
         "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 0.1543,
+        "direct": false,
+        "updates_amount": 1
       }
     ],
     "USD-bank": [
       {
         "name": "Freedom KZ",
         "rate": 81.75,
+        "direct": false,
+        "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 84.08,
         "direct": false,
         "updates_amount": 1
       }
@@ -148,6 +160,12 @@
         "rate": 96.11,
         "direct": false,
         "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 98.11,
+        "direct": false,
+        "updates_amount": 1
       }
     ]
   },
@@ -155,9 +173,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 536.7654545454545,
+        "rate": 536.7904195804197,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "USD-bank": [
@@ -182,6 +200,12 @@
         "rate": 6.99,
         "direct": false,
         "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 0.1383,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -189,9 +213,9 @@
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 545.0430769230769,
+        "rate": 544.9111217948719,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   },
@@ -266,6 +290,12 @@
         "rate": 77.62,
         "direct": true,
         "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 76.58,
+        "direct": true,
+        "updates_amount": 1
       }
     ],
     "EUR-bank": [
@@ -298,6 +328,12 @@
       {
         "name": "Freedom KZ",
         "rate": 90.99,
+        "direct": true,
+        "updates_amount": 1
+      },
+      {
+        "name": "Cifra RU",
+        "rate": 90.29,
         "direct": true,
         "updates_amount": 1
       }
