@@ -113,17 +113,17 @@
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 82.2,
+        "rate": 82.125,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 556.723,
+        "rate": 556.6520555555555,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   },
@@ -131,9 +131,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 540.451,
+        "rate": 540.2027727272728,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ],
     "RUB-bank": [
@@ -214,6 +214,14 @@
       {
         "name": "Korona Pay",
         "rate": 102.646906,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ],
+    "USD-crypto": [
+      {
+        "name": "Bybit P2P",
+        "rate": 89.4,
         "direct": false,
         "updates_amount": 1
       }
