@@ -5,7 +5,7 @@
         "name": "MOEX Indicative",
         "rate": 76.0937,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "OpenExchangeRates",
@@ -77,7 +77,7 @@
         "name": "MOEX Indicative",
         "rate": 76.0937,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "OpenExchangeRates",
@@ -91,15 +91,15 @@
         "name": "MOEX Indicative",
         "rate": 88.70280000000001,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "KZT-forex": [
       {
         "name": "MOEX Indicative",
-        "rate": 6.7087891226637435,
+        "rate": 6.704556037258967,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "GBP-forex": [
@@ -107,15 +107,15 @@
         "name": "MOEX Indicative",
         "rate": 101.76009999999998,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "CNY-forex": [
       {
         "name": "MOEX Indicative",
-        "rate": 10.9158,
+        "rate": 10.96518181818182,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "JPY-forex": [
@@ -123,7 +123,7 @@
         "name": "MOEX Indicative",
         "rate": 2.037738924888943,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ]
   },
@@ -133,7 +133,7 @@
         "name": "MOEX Indicative",
         "rate": 88.70280000000001,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-forex": [
@@ -149,9 +149,9 @@
     "RUB-forex": [
       {
         "name": "MOEX Indicative",
-        "rate": 6.7087891226637435,
+        "rate": 6.704556037258967,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-forex": [
@@ -169,7 +169,7 @@
         "name": "MOEX Indicative",
         "rate": 101.76009999999998,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-forex": [
@@ -185,9 +185,9 @@
     "RUB-forex": [
       {
         "name": "MOEX Indicative",
-        "rate": 10.9158,
+        "rate": 10.96518181818182,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-forex": [
@@ -205,7 +205,7 @@
         "name": "MOEX Indicative",
         "rate": 2.037738924888943,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-forex": [
@@ -221,37 +221,37 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 75.05375661375662,
+        "rate": 75.05948979591837,
         "direct": false,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "USD-bank": [
       {
         "name": "Cifra RU",
-        "rate": 80.20000000000002,
+        "rate": 80.20000000000003,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 79.71200000000002,
+        "rate": 79.74363636363637,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "EUR-bank": [
       {
         "name": "Cifra RU",
-        "rate": 93.20000000000002,
+        "rate": 93.20000000000003,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 93.03800000000001,
+        "rate": 93.06454545454547,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "KZT-bank": [
@@ -259,21 +259,21 @@
         "name": "Cifra RU",
         "rate": 0.159,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 6.3740000000000006,
+        "rate": 6.373636363636365,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "EUR-cash": [
       {
         "name": "Korona Pay",
-        "rate": 95.3936819,
+        "rate": 95.4402070909091,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "RSD-bank": [
@@ -289,17 +289,17 @@
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 81.92920634920631,
+        "rate": 81.93923469387752,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 477.8312169312169,
+        "rate": 478.43826530612245,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ]
   },
@@ -307,9 +307,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 514.0771957671956,
+        "rate": 514.0433673469386,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "RUB-bank": [
@@ -317,29 +317,29 @@
         "name": "Cifra RU",
         "rate": 0.151,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 6.724000000000002,
+        "rate": 6.72818181818182,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 509.1,
+        "rate": 509.27272727272725,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "EUR-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 593.0,
+        "rate": 593.1363636363636,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "RSD-bank": [
@@ -357,29 +357,29 @@
         "name": "Cifra RU",
         "rate": 76.0,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 74.864,
+        "rate": 74.83272727272728,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "KZT-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 502.9,
+        "rate": 503.0,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "EUR-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 1.17496,
+        "rate": 1.175109090909091,
         "direct": false,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "RSD-bank": [
@@ -395,31 +395,31 @@
     "RUB-bank": [
       {
         "name": "Cifra RU",
-        "rate": 88.29999999999998,
+        "rate": 88.29999999999997,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       },
       {
         "name": "Freedom KZ",
-        "rate": 87.148,
+        "rate": 87.11454545454545,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "KZT-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 586.0,
+        "rate": 586.1363636363636,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "USD-bank": [
       {
         "name": "Freedom KZ",
-        "rate": 1.1549599999999998,
+        "rate": 1.1551090909090909,
         "direct": true,
-        "updates_amount": 10
+        "updates_amount": 11
       }
     ],
     "RSD-bank": [
