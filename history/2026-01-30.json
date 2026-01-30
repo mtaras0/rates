@@ -221,9 +221,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 77.2769609375,
+        "rate": 77.27731538461538,
         "direct": false,
-        "updates_amount": 64
+        "updates_amount": 65
       }
     ],
     "USD-bank": [
@@ -275,23 +275,31 @@
         "direct": false,
         "updates_amount": 25
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.2725967788025243,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "USD-crypto": {
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 86.7890625,
+        "rate": 86.79584615384614,
         "direct": true,
-        "updates_amount": 64
+        "updates_amount": 65
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 481.9920917252146,
+        "rate": 482.1578241167434,
         "direct": true,
-        "updates_amount": 61
+        "updates_amount": 62
       }
     ]
   },
@@ -299,9 +307,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 504.24640625000006,
+        "rate": 504.20112087912094,
         "direct": true,
-        "updates_amount": 64
+        "updates_amount": 65
       }
     ],
     "RUB-bank": [
@@ -332,6 +340,14 @@
         "rate": 604.02,
         "direct": false,
         "updates_amount": 25
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.19342843827609307,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -365,6 +381,14 @@
         "direct": false,
         "updates_amount": 25
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 97.18811837155165,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "EUR-bank": {
@@ -396,6 +420,14 @@
         "rate": 1.1838800000000003,
         "direct": true,
         "updates_amount": 25
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.70257094468015,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
