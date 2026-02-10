@@ -3,9 +3,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 77.32642857142858,
+        "rate": 77.41095238095238,
         "direct": false,
-        "updates_amount": 2
+        "updates_amount": 3
       }
     ],
     "USD-bank": [
@@ -57,6 +57,14 @@
         "direct": false,
         "updates_amount": 1
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.258398336887268,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "USD-crypto": {
@@ -65,15 +73,15 @@
         "name": "Bybit P2P",
         "rate": 88.82000000000001,
         "direct": true,
-        "updates_amount": 2
+        "updates_amount": 3
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 463.95428571428573,
+        "rate": 463.9409523809524,
         "direct": true,
-        "updates_amount": 2
+        "updates_amount": 3
       }
     ]
   },
@@ -81,9 +89,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 500.05285714285714,
+        "rate": 499.9814285714286,
         "direct": true,
-        "updates_amount": 2
+        "updates_amount": 3
       }
     ],
     "RUB-bank": [
@@ -113,6 +121,14 @@
         "name": "Freedom KZ",
         "rate": 590.0,
         "direct": false,
+        "updates_amount": 1
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.19754692365616133,
+        "direct": true,
         "updates_amount": 1
       }
     ]
@@ -147,6 +163,14 @@
         "direct": false,
         "updates_amount": 1
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 97.61386137135156,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "EUR-bank": {
@@ -176,6 +200,14 @@
       {
         "name": "Freedom KZ",
         "rate": 1.1806,
+        "direct": true,
+        "updates_amount": 1
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.25280119916391,
         "direct": true,
         "updates_amount": 1
       }
