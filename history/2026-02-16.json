@@ -3,9 +3,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 76.51731216931219,
+        "rate": 76.51495918367348,
         "direct": false,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "USD-bank": [
@@ -71,17 +71,17 @@
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 88.16407407407411,
+        "rate": 88.17107142857147,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 467.4644929453262,
+        "rate": 467.9465467687074,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ]
   },
@@ -89,9 +89,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 493.56634920634923,
+        "rate": 493.4811734693877,
         "direct": true,
-        "updates_amount": 27
+        "updates_amount": 28
       }
     ],
     "RUB-bank": [
@@ -308,6 +308,12 @@
         "rate": 77.2465035,
         "direct": true,
         "updates_amount": 2
+      },
+      {
+        "name": "MOEX Indicative",
+        "rate": 77.1944,
+        "direct": true,
+        "updates_amount": 1
       }
     ],
     "CNY-forex": [
@@ -382,6 +388,12 @@
         "rate": 77.2465035,
         "direct": false,
         "updates_amount": 2
+      },
+      {
+        "name": "MOEX Indicative",
+        "rate": 77.1944,
+        "direct": false,
+        "updates_amount": 1
       }
     ]
   },
