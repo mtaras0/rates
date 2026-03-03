@@ -3,9 +3,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 76.8637888198758,
+        "rate": 76.87839285714288,
         "direct": false,
-        "updates_amount": 23
+        "updates_amount": 24
       }
     ],
     "USD-bank": [
@@ -57,23 +57,31 @@
         "direct": false,
         "updates_amount": 9
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.2757862116412184,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "USD-crypto": {
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 89.09062111801238,
+        "rate": 89.0905952380952,
         "direct": true,
-        "updates_amount": 23
+        "updates_amount": 24
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 481.5231677018633,
+        "rate": 481.63291666666663,
         "direct": true,
-        "updates_amount": 23
+        "updates_amount": 24
       }
     ]
   },
@@ -81,9 +89,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 497.75260869565216,
+        "rate": 497.76946428571426,
         "direct": true,
-        "updates_amount": 23
+        "updates_amount": 24
       }
     ],
     "RUB-bank": [
@@ -114,6 +122,14 @@
         "rate": 589.0,
         "direct": false,
         "updates_amount": 9
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.19853104071379266,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -371,7 +387,7 @@
         "name": "Visa Payment",
         "rate": 99.19801972183606,
         "direct": true,
-        "updates_amount": 1
+        "updates_amount": 2
       }
     ]
   },
@@ -404,6 +420,14 @@
         "rate": 1.1632000000000002,
         "direct": true,
         "updates_amount": 9
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.77412496006083,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
