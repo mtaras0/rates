@@ -3,9 +3,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 78.32628236083167,
+        "rate": 78.328833994709,
         "direct": false,
-        "updates_amount": 71
+        "updates_amount": 72
       }
     ],
     "USD-bank": [
@@ -57,23 +57,31 @@
         "direct": false,
         "updates_amount": 29
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.2643827290647824,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "USD-crypto": {
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 90.32231388329987,
+        "rate": 90.3301984126985,
         "direct": true,
-        "updates_amount": 71
+        "updates_amount": 72
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 481.77687122736427,
+        "rate": 481.79475198412706,
         "direct": true,
-        "updates_amount": 71
+        "updates_amount": 72
       }
     ]
   },
@@ -81,9 +89,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 489.7625150905434,
+        "rate": 489.74682539682556,
         "direct": true,
-        "updates_amount": 71
+        "updates_amount": 72
       }
     ],
     "RUB-bank": [
@@ -114,6 +122,14 @@
         "rate": 574.3103448275863,
         "direct": false,
         "updates_amount": 29
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.20101486588414688,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -369,9 +385,9 @@
     "RSD-bank": [
       {
         "name": "Visa Payment",
-        "rate": 100.20792041198361,
+        "rate": 100.20792041198362,
         "direct": true,
-        "updates_amount": 3
+        "updates_amount": 4
       }
     ]
   },
@@ -404,6 +420,14 @@
         "rate": 1.1529931034482757,
         "direct": true,
         "updates_amount": 29
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.28932831134557,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
