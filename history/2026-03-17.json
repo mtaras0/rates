@@ -221,9 +221,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 80.72597193877547,
+        "rate": 80.73145614035083,
         "direct": false,
-        "updates_amount": 56
+        "updates_amount": 57
       }
     ],
     "USD-bank": [
@@ -275,23 +275,31 @@
         "direct": false,
         "updates_amount": 22
       }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 1.2405399166002604,
+        "direct": true,
+        "updates_amount": 1
+      }
     ]
   },
   "USD-crypto": {
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 93.89505102040812,
+        "rate": 93.90180451127814,
         "direct": true,
-        "updates_amount": 56
+        "updates_amount": 57
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 475.7426870748301,
+        "rate": 475.7741687552215,
         "direct": true,
-        "updates_amount": 56
+        "updates_amount": 57
       }
     ]
   },
@@ -299,9 +307,9 @@
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 486.0930867346939,
+        "rate": 486.04548872180453,
         "direct": true,
-        "updates_amount": 56
+        "updates_amount": 57
       }
     ],
     "RUB-bank": [
@@ -332,6 +340,14 @@
         "rate": 556.4545454545455,
         "direct": false,
         "updates_amount": 22
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.2093978939255474,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
@@ -371,7 +387,7 @@
         "name": "Visa Payment",
         "rate": 101.12871375481166,
         "direct": true,
-        "updates_amount": 3
+        "updates_amount": 4
       }
     ]
   },
@@ -404,6 +420,14 @@
         "rate": 1.1389818181818183,
         "direct": true,
         "updates_amount": 22
+      }
+    ],
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 115.38797672513736,
+        "direct": true,
+        "updates_amount": 1
       }
     ]
   },
