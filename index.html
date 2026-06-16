@@ -57,6 +57,96 @@
     .graph {
         text-shadow: 0.5px 0px 0px color-mix(in srgb, CanvasText, Canvas 5%);
     }
+
+    .calc-container {
+        margin-top: 12px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #calc-input {
+        width: 100%;
+        background: transparent;
+        color: CanvasText;
+        border: 1px solid color-mix(in srgb, var(--themed-text), transparent 70%);
+        border-radius: 4px;
+        padding: 8px 10px;
+        font-family: 'Cascadia Mono', monospace;
+        font-size: clamp(0px, 3.75vw, 2.0vh);
+        line-height: 1.5;
+        resize: none;
+        box-sizing: border-box;
+        outline: none;
+        overflow-y: hidden;
+        white-space: pre-wrap;
+        word-break: break-all;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    #calc-input:focus {
+        border-color: var(--themed-text);
+        box-shadow: 0 0 5px color-mix(in srgb, var(--themed-text), transparent 80%);
+    }
+
+    #calc-answers {
+        margin-top: 15px;
+        font-family: 'Cascadia Mono', monospace;
+        font-size: clamp(0px, 3.75vw, 2.0vh);
+        line-height: 1.6;
+    }
+
+    .calc-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 12px;
+        padding: 4px 0;
+        border-bottom: 1px dashed color-mix(in srgb, var(--themed-text), transparent 92%);
+    }
+
+    .calc-val {
+        font-weight: 600;
+        color: CanvasText;
+    }
+
+    .calc-unit {
+        color: var(--themed-text);
+        opacity: 0.8;
+    }
+
+    .calc-btn-container {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .calc-btn {
+        background: color-mix(in srgb, CanvasText, transparent 96%);
+        color: var(--themed-text);
+        border: 1px solid color-mix(in srgb, var(--themed-text), transparent 75%);
+        border-radius: 4px;
+        padding: 4px 10px;
+        font-family: 'Cascadia Mono', monospace;
+        font-size: clamp(0px, 3.0vw, 1.6vh);
+        cursor: pointer;
+        transition: background 0.15s, border-color 0.15s;
+        outline: none;
+    }
+
+    .calc-btn:hover {
+        background: color-mix(in srgb, CanvasText, transparent 90%);
+        border-color: var(--themed-text);
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    #calc-spacer {
+        height: 120vh;
+    }
 </style>
 
 <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; width: 100%; padding: 20px 0; box-sizing: border-box;">
@@ -89,9 +179,495 @@
 <span class="accent"> EUR  <span class="graph">▅▅▅▄▄▄▄▄▄▅▄▄▄▄▄▅▄▅▅▄▄▄▄▄▄▄▄▄▄▄</span></span>
 <span class="accent"> USD  <span class="graph">▄▄▄▄▄▅▅▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▄▅▅▅▅▅▄▅</span> </span>
 <span class="accent"> CNY  <span class="graph">▄▄▄▄▅▃▃▄▄▄▅▅▃▃▅▅▅▅▆▅▅▆▆▄▅▄▄▄▄▄</span> NEER</span>
-<span class="accent"> RUB  <span class="graph">▃▅▇██▆▆█▆▆█▇▆▆▇▆▄▃▁▂▂▁▃▆▅▅▄▄▄▄</span> </span>
-<span class="accent"> RSD  <span class="graph">▇█▇▇▇▂▂▇▇▇▇▇▂▂▇▇▇▇▆▂▂▇▆▂▂▂▂▂▁▂</span></span>
+<span class="accent"> RUB  <span class="graph">▃▅▇██▆▆█▆▆█▇▆▆▇▆▄▃▁▂▂▁▃▆▅▅▄▄▄▄</span></span>
 ──────────────────────────────────────────
-           Updated: 16.06 17:05</span></pre>
+           Convert/Calculate
+</span></pre>
+
+        <div class="calc-container">
+            <textarea id="calc-input" rows="1" placeholder="Type conversion or calculation..."></textarea>
+
+            <div id="calc-answers" class="hidden">
+                <div class="calc-rows">
+                    <div class="calc-row">
+                        <span class="calc-val" id="val-rub">0.00</span>
+                        <span class="calc-unit">rub</span>
+                    </div>
+                    <div class="calc-row">
+                        <span class="calc-val" id="val-rsd">0.00</span>
+                        <span class="calc-unit">rsd</span>
+                    </div>
+                    <div class="calc-row">
+                        <span class="calc-val" id="val-eur">0.00</span>
+                        <span class="calc-unit">eur</span>
+                    </div>
+                    <div class="calc-row">
+                        <span class="calc-val" id="val-usd">0.00</span>
+                        <span class="calc-unit">usd</span>
+                    </div>
+                    <div class="calc-row">
+                        <span class="calc-val" id="val-kzt">0.00</span>
+                        <span class="calc-unit">kzt</span>
+                    </div>
+                </div>
+
+                <div class="calc-btn-container">
+                    <button id="calc-mode-btn" class="calc-btn">Switch to Precise</button>
+                </div>
+            </div>
+
+            <div id="calc-spacer" class="hidden"></div>
+        </div>
     </div>
 </div>
+
+<script>
+    const RATES_DATA = {"rub2rsd": {"bank": {"current": 1.3386265658988514, "sparkline_full": "   1.36                           \n  ▄▆█▇█▇▇▇▇▆▇▇▇▇▆▅▃▁▂▃▃▄▅▆▆▆▅▅▅▆  \n                  1.30            "}, "korona": {"current": 1.297422673192125, "diff_percent": -3.0780722388442308}, "crypto": {"current": 1.402338309508087, "diff_percent": 4.7594859710896955}, "forex": {"current": 1.402102738050351, "diff_percent": 4.741887974476067}}, "rub2eur": {"bank": {"current": 0.011519410206197442, "sparkline_full": "   85.7                           \n  ▄▆█████▇▆▆████▇▅▃▁▂▂▂▃▅▆▆▆▅▅▅▆  \n                  89.4            "}, "korona": {"current": 0.011108070832124358, "diff_percent": -3.570837106328437}, "crypto": {"current": 0.01204297585039023, "diff_percent": 4.545073357237591}, "forex": {"current": 0.01194496251783098, "diff_percent": 3.69421961729074}}, "rub2usd": {"bank": {"current": 0.013374348000534974, "sparkline_full": "            73.7                  \n  ▄▇█▇▇▇▇▇▇▇████▇▅▃▁▂▂▂▂▅▅▅▅▅▅▅▅  \n                  76.9            "}, "korona": {"current": 0.012614707566282206, "diff_percent": -5.679831526907947}, "crypto": {"current": 0.013954170390228353, "diff_percent": 4.335332007737394}, "forex": {"current": 0.01386216571387381, "diff_percent": 3.6474130426344744}}, "xdr": {"rub2xdr": {"current_rate": 0.009750162148922178, "sparkline": "▂▃▄▅█▅▃▄▃▃▄▄▄▄▃▂▁▁▁▁▁▂▃▄▃▃▂▂▂▃"}, "usd2xdr": {"current_rate": 0.703697, "sparkline": "▂▂▂▃▇▄▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▃▃▃▃▃▃▃▃▃"}, "eur2xdr": {"current_rate": 0.816257241022524, "sparkline": "▃▃▂▃▇▄▃▃▂▃▃▃▃▃▂▃▂▃▂▂▂▃▃▃▃▃▃▃▃▃"}, "cny2xdr": {"current_rate": 0.10409103011656116, "sparkline": "▂▂▂▃▇▄▂▂▂▂▂▂▂▂▂▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃"}, "rsd2xdr": {"current_rate": 0.006953956999242404, "sparkline": "▃▃▂▃▇▄▃▃▃▃▃▃▃▃▂▃▂▃▂▂▂▃▃▃▃▃▃▃▃▃"}}, "neer": {"rub": {"current_rate": 105.88183937579775, "sparkline": "▃▅▇██▆▆█▆▆█▇▆▆▇▆▄▃▁▂▂▁▃▆▅▅▄▄▄▄"}, "usd": {"current_rate": 102.53154363892098, "sparkline": "▄▄▄▄▄▅▅▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▄▅▅▅▅▅▄▅"}, "eur": {"current_rate": 108.85040601295752, "sparkline": "▅▅▅▄▄▄▄▄▄▅▄▄▄▄▄▅▄▅▅▄▄▄▄▄▄▄▄▄▄▄"}, "cny": {"current_rate": 112.22712196653802, "sparkline": "▄▄▄▄▅▃▃▄▄▄▅▅▃▃▅▅▅▅▆▅▅▆▆▄▅▄▄▄▄▄"}, "rsd": {"current_rate": 109.34287854753151, "sparkline": "▇█▇▇▇▂▂▇▇▇▇▇▂▂▇▇▇▇▆▂▂▇▆▂▂▂▂▂▁▂"}}, "specific_rates": {"rub_kzt_bank": 6.56, "rub_kzt_crypto": 6.858474746797236, "kzt_rsd_bank": 0.2044679555265476, "rsd_eur_cash": 0.00844880027036161, "eur_rsd_cash": 116.8, "rsd_usd_cash": 0.009722897423432181, "usd_rsd_cash": 99.3, "eur_usd_exch": 1.1599555505033046, "usd_kzt_bank": 484.5}, "conversion_rates": {"rub_usd": {"rub_to_usd": [0.013374348000534974, 0.013245033112582781], "usd_to_rub": [70.19, 71.2]}, "rub_eur": {"rub_to_eur": [0.011519410206197442, 0.011402508551881414], "eur_to_rub": [81.4, 82.7]}, "rub_kzt": {"rub_to_kzt": [6.56, 6.451612903225807], "kzt_to_rub": [0.1447178002894356, 0.146]}, "rub_rsd": {"rub_to_rsd": [1.3695935112787938], "rsd_to_rub": [0.7301436461]}, "usd_eur": {"usd_to_eur": [0.8547008547008548], "eur_to_usd": [1.15]}, "usd_kzt": {"usd_to_kzt": [484.5], "kzt_to_usd": [0.002034587995930824]}, "usd_rsd": {"usd_to_rsd": [100.08910833225713], "rsd_to_usd": [0.0099910971]}, "eur_kzt": {"eur_to_kzt": [562.5], "kzt_to_eur": [0.001755926251097454]}, "eur_rsd": {"eur_to_rsd": [115.76317923567895], "rsd_to_eur": [0.0086383253]}, "kzt_rsd": {"kzt_to_rsd": [0.2044679555265476], "rsd_to_kzt": [4.8907419132]}, "eur_usd_forex": {"eur_to_usd": [1.1599555505033046], "usd_to_eur": [0.862102]}}, "update_time": "2026-06-16 17:14:05", "update_time_display": "16.06 17:14"};
+
+    const currencyMap = {
+        'rub': 'rub', 'r': 'rub', 'руб': 'rub', 'р': 'rub', '\u20BD': 'rub',
+        'd': 'rsd', 'din': 'rsd', 'rsd': 'rsd', '\u0434': 'rsd', '\u0434\u0438\u043D': 'rsd', '\u0440\u0441\u0434': 'rsd',
+        'e': 'eur', 'eur': 'eur', 'euro': 'eur', '\u0435': 'eur', '\u0435\u0432\u0440\u043E': 'eur', '\u20AC': 'eur',
+        'usd': 'usd', '$': 'usd', '\u044E\u0441\u0434': 'usd', '\u0443\u0441\u0434': 'usd',
+        'kzt': 'kzt', 'tg': 'kzt', 't': 'kzt', '\u043A\u0437\u0442': 'kzt', '\u0442\u0433': 'kzt', '\u0442': 'kzt'
+    };
+
+    const allDesc = [
+        { code: 'eur', str: 'euro' }, { code: 'eur', str: '\u0435\u0432\u0440\u043E' },
+        { code: 'eur', str: 'eur' }, { code: 'rub', str: 'rub' },
+        { code: 'rub', str: '\u0440\u0443\u0431' }, { code: 'rsd', str: 'rsd' },
+        { code: 'rsd', str: 'din' }, { code: 'rsd', str: '\u0434\u0438\u043D' },
+        { code: 'rsd', str: '\u0440\u0441\u0434' }, { code: 'usd', str: 'usd' },
+        { code: 'usd', str: '\u044E\u0441\u0434' }, { code: 'usd', str: '\u0443\u0441\u0434' },
+        { code: 'kzt', str: 'kzt' }, { code: 'kzt', str: '\u043A\u0437\u0442' },
+        { code: 'kzt', str: '\u0442\u0433' }, { code: 'kzt', str: 'tg' },
+        { code: 'eur', str: '\u20AC' }, { code: 'usd', str: '$' },
+        { code: 'rub', str: '\u20BD' }, { code: 'eur', str: 'e' },
+        { code: 'eur', str: '\u0435' }, { code: 'rub', str: 'r' },
+        { code: 'rub', str: '\u0440' }, { code: 'rsd', str: 'd' },
+        { code: 'rsd', str: '\u0434' }, { code: 'kzt', str: 't' },
+        { code: 'kzt', str: '\u0442' }
+    ];
+
+    function tokenize(str) {
+        str = str.toLowerCase();
+        str = str.replace(/(\d),(\d)/g, '$1.$2');
+        str = str.replace(/x|\u00D7|\u0445/g, '*');
+        str = str.replace(/:|\u00F7/g, '/');
+
+        const tokens = [];
+        let i = 0;
+
+        while (i < str.length) {
+            let char = str[i];
+
+            if (/\s/.test(char)) {
+                i++;
+                continue;
+            }
+
+            if (['+', '-', '*', '/', '(', ')'].includes(char)) {
+                tokens.push({ type: 'op', value: char });
+                i++;
+                continue;
+            }
+
+            let foundDescBefore = null;
+            let descLen = 0;
+            for (let d of allDesc) {
+                if (str.substr(i, d.str.length) === d.str) {
+                    foundDescBefore = d.code;
+                    descLen = d.str.length;
+                    break;
+                }
+            }
+
+            if (foundDescBefore) {
+                let nextIdx = i + descLen;
+                if (nextIdx < str.length && str[nextIdx] === ' ') {
+                    nextIdx++;
+                }
+
+                let numMatch = str.substr(nextIdx).match(/^\d+(?:\.\d+)?/);
+                if (numMatch) {
+                    tokens.push({
+                        type: 'val',
+                        value: parseFloat(numMatch[0]),
+                        currency: foundDescBefore
+                    });
+                    i = nextIdx + numMatch[0].length;
+                    continue;
+                } else {
+                    i += descLen;
+                    continue;
+                }
+            }
+
+            let numMatch = str.substr(i).match(/^\d+(?:\.\d+)?/);
+            if (numMatch) {
+                let valStr = numMatch[0];
+                let nextIdx = i + valStr.length;
+                if (nextIdx < str.length && str[nextIdx] === ' ') {
+                    nextIdx++;
+                }
+
+                let foundDescAfter = null;
+                let descLenAfter = 0;
+                for (let d of allDesc) {
+                    if (str.substr(nextIdx, d.str.length) === d.str) {
+                        foundDescAfter = d.code;
+                        descLenAfter = d.str.length;
+                        break;
+                    }
+                }
+
+                if (foundDescAfter) {
+                    tokens.push({
+                        type: 'val',
+                        value: parseFloat(valStr),
+                        currency: foundDescAfter
+                    });
+                    i = nextIdx + descLenAfter;
+                } else {
+                    tokens.push({
+                        type: 'val',
+                        value: parseFloat(valStr),
+                        currency: null
+                    });
+                    i = i + valStr.length;
+                }
+                continue;
+            }
+            i++;
+        }
+        return tokens;
+    }
+
+    function sanitizeTokens(tokens) {
+        const withUnary = [];
+        for (let i = 0; i < tokens.length; i++) {
+            let tok = tokens[i];
+            if (tok.type === 'op' && (tok.value === '-' || tok.value === '+')) {
+                let isUnary = false;
+                if (i === 0) {
+                    isUnary = true;
+                } else {
+                    let prev = tokens[i - 1];
+                    if (prev.type === 'op' && ['+', '-', '*', '/', '('].includes(prev.value)) {
+                        isUnary = true;
+                    }
+                }
+                if (isUnary) {
+                    tok = { type: 'op', value: tok.value === '-' ? 'u-' : 'u+' };
+                }
+            }
+            withUnary.push(tok);
+        }
+
+        const sanitized = [];
+        for (let i = 0; i < withUnary.length; i++) {
+            let tok = withUnary[i];
+            sanitized.push(tok);
+
+            if (tok.type === 'op' && ['+', '-', '*', '/'].includes(tok.value)) {
+                let nextTok = withUnary[i + 1];
+                if (!nextTok || (nextTok.type === 'op' && [')', '+', '-', '*', '/'].includes(nextTok.value))) {
+                    if (['+', '-'].includes(tok.value)) {
+                        sanitized.push({ type: 'val', value: 0, currency: null });
+                    } else {
+                        sanitized.push({ type: 'val', value: 1, currency: null });
+                    }
+                }
+            }
+        }
+
+        let openCount = 0;
+        for (let tok of sanitized) {
+            if (tok.type === 'op' && tok.value === '(') openCount++;
+            if (tok.type === 'op' && tok.value === ')') openCount--;
+        }
+
+        while (openCount > 0) {
+            sanitized.push({ type: 'op', value: ')' });
+            openCount--;
+        }
+
+        return sanitized;
+    }
+
+    function shuntingYard(tokens) {
+        const outputQueue = [];
+        const operatorStack = [];
+        const precedence = {
+            '+': 1, '-': 1, '*': 2, '/': 2, 'u-': 3, 'u+': 3
+        };
+
+        for (let token of tokens) {
+            if (token.type === 'val') {
+                outputQueue.push(token);
+            } else if (token.type === 'op') {
+                if (token.value === '(') {
+                    operatorStack.push(token);
+                } else if (token.value === ')') {
+                    while (operatorStack.length > 0 && operatorStack[operatorStack.length - 1].value !== '(') {
+                        outputQueue.push(operatorStack.pop());
+                    }
+                    operatorStack.pop();
+                } else {
+                    while (
+                        operatorStack.length > 0 &&
+                        operatorStack[operatorStack.length - 1].value !== '(' &&
+                        precedence[operatorStack[operatorStack.length - 1].value] >= precedence[token.value]
+                    ) {
+                        outputQueue.push(operatorStack.pop());
+                    }
+                    operatorStack.push(token);
+                }
+            }
+        }
+        while (operatorStack.length > 0) {
+            outputQueue.push(operatorStack.pop());
+        }
+        return outputQueue;
+    }
+
+    function evaluateRPN(rpn, rates) {
+        const stack = [];
+
+        for (let token of rpn) {
+            if (token.type === 'val') {
+                stack.push({
+                    isMoney: token.currency !== null,
+                    value: token.value,
+                    currency: token.currency
+                });
+            } else if (token.type === 'op') {
+                if (token.value === 'u-') {
+                    let a = stack.pop() || { isMoney: false, value: 0, currency: null };
+                    stack.push({ isMoney: a.isMoney, value: -a.value, currency: a.currency });
+                    continue;
+                }
+                if (token.value === 'u+') {
+                    let a = stack.pop() || { isMoney: false, value: 0, currency: null };
+                    stack.push(a);
+                    continue;
+                }
+
+                let b = stack.pop() || { isMoney: false, value: 0, currency: null };
+                let a = stack.pop() || { isMoney: false, value: 0, currency: null };
+
+                let result = { isMoney: false, value: 0, currency: null };
+
+                if (token.value === '+') {
+                    if (a.isMoney && b.isMoney) {
+                        let v1 = convertTo(rates, a.value, a.currency, 'usd');
+                        let v2 = convertTo(rates, b.value, b.currency, 'usd');
+                        result = { isMoney: true, value: v1 + v2, currency: 'usd' };
+                    } else if (!a.isMoney && !b.isMoney) {
+                        result = { isMoney: false, value: a.value + b.value, currency: null };
+                    } else {
+                        let money = a.isMoney ? a : b;
+                        let num = a.isMoney ? b.value : a.value;
+                        let base = convertTo(rates, money.value, money.currency, 'usd');
+                        result = { isMoney: true, value: base + num, currency: 'usd' };
+                    }
+                } else if (token.value === '-') {
+                    if (a.isMoney && b.isMoney) {
+                        let v1 = convertTo(rates, a.value, a.currency, 'usd');
+                        let v2 = convertTo(rates, b.value, b.currency, 'usd');
+                        result = { isMoney: true, value: v1 - v2, currency: 'usd' };
+                    } else if (!a.isMoney && !b.isMoney) {
+                        result = { isMoney: false, value: a.value - b.value, currency: null };
+                    } else {
+                        let money = a.isMoney ? a : b;
+                        let num = a.isMoney ? b.value : a.value;
+                        let base = convertTo(rates, money.value, money.currency, 'usd');
+                        if (a.isMoney) {
+                            result = { isMoney: true, value: base - num, currency: 'usd' };
+                        } else {
+                            result = { isMoney: true, value: a.value - base, currency: 'usd' };
+                        }
+                    }
+                } else if (token.value === '*') {
+                    if (a.isMoney && !b.isMoney) {
+                        let base = convertTo(rates, a.value, a.currency, 'usd');
+                        result = { isMoney: true, value: base * b.value, currency: 'usd' };
+                    } else if (b.isMoney && !a.isMoney) {
+                        let base = convertTo(rates, b.value, b.currency, 'usd');
+                        result = { isMoney: true, value: base * a.value, currency: 'usd' };
+                    } else if (a.isMoney && b.isMoney) {
+                        result = { isMoney: false, value: 0, currency: null };
+                    } else {
+                        result = { isMoney: false, value: a.value * b.value, currency: null };
+                    }
+                } else if (token.value === '/') {
+                    if (a.isMoney && !b.isMoney && b.value !== 0) {
+                        let base = convertTo(rates, a.value, a.currency, 'usd');
+                        result = { isMoney: true, value: base / b.value, currency: 'usd' };
+                    } else if (a.isMoney && b.isMoney) {
+                        let v1 = convertTo(rates, a.value, a.currency, 'usd');
+                        let v2 = convertTo(rates, b.value, b.currency, 'usd');
+                        result = { isMoney: false, value: v2 !== 0 ? v1 / v2 : 0, currency: null };
+                    } else {
+                        result = { isMoney: false, value: b.value !== 0 ? a.value / b.value : 0, currency: null };
+                    }
+                }
+                stack.push(result);
+            }
+        }
+        return stack.pop() || { isMoney: false, value: 0, currency: null };
+    }
+
+    function convertTo(rates, amount, fromCurrency, toCurrency) {
+        if (fromCurrency === toCurrency) return amount;
+        if (fromCurrency === null) return amount;
+
+        if (toCurrency === 'usd') {
+            if (fromCurrency === 'usd') return amount;
+            const pair = fromCurrency + '_' + toCurrency;
+            const dir = fromCurrency + '_to_' + toCurrency;
+            const pathRates = rates[pair] && rates[pair][dir];
+            if (pathRates && pathRates.length > 0) {
+                const avg = pathRates.reduce((s, r) => s + r, 0) / pathRates.length;
+                return amount * avg;
+            }
+
+            const reversePair = toCurrency + '_' + fromCurrency;
+            const reverseDir = toCurrency + '_to_' + fromCurrency;
+            const reverseRates = rates[reversePair] && rates[reversePair][reverseDir];
+            if (reverseRates && reverseRates.length > 0) {
+                const avg = reverseRates.reduce((s, r) => s + r, 0) / reverseRates.length;
+                return avg !== 0 ? amount / avg : 0;
+            }
+
+            return amount;
+        }
+
+        if (fromCurrency === 'usd') {
+            const pair = toCurrency + '_' + fromCurrency;
+            const dir = toCurrency + '_to_' + fromCurrency;
+            const pathRates = rates[pair] && rates[pair][dir];
+            if (pathRates && pathRates.length > 0) {
+                const avg = pathRates.reduce((s, r) => s + r, 0) / pathRates.length;
+                return avg !== 0 ? amount / avg : 0;
+            }
+
+            const reversePair = fromCurrency + '_' + toCurrency;
+            const reverseDir = fromCurrency + '_to_' + toCurrency;
+            const reverseRates = rates[reversePair] && rates[reversePair][reverseDir];
+            if (reverseRates && reverseRates.length > 0) {
+                const avg = reverseRates.reduce((s, r) => s + r, 0) / reverseRates.length;
+                return amount * avg;
+            }
+
+            return amount;
+        }
+
+        const usdAmount = convertTo(rates, amount, fromCurrency, 'usd');
+        return convertTo(rates, usdAmount, 'usd', toCurrency);
+    }
+
+    function formatThreeDigits(number) {
+        if (number === 0) return "0.00";
+        const sign = number < 0 ? "-" : "";
+        const absNum = Math.abs(number);
+
+        let exponent = Math.floor(Math.log10(absNum));
+        let decimals = 2 - exponent;
+
+        if (decimals < 0) {
+            decimals = 0;
+        }
+
+        let rounded = Math.round(absNum * Math.pow(10, decimals)) / Math.pow(10, decimals);
+
+        let newExponent = Math.floor(Math.log10(rounded + 1e-15));
+        let newDecimals = 2 - newExponent;
+        if (newDecimals < 0) newDecimals = 0;
+        if (newDecimals !== decimals) {
+            decimals = newDecimals;
+            rounded = Math.round(absNum * Math.pow(10, decimals)) / Math.pow(10, decimals);
+        }
+
+        return sign + rounded.toFixed(decimals);
+    }
+
+    function formatPrecise(number) {
+        return number.toFixed(2);
+    }
+
+    let modePrecise = false;
+    let calcActivated = false;
+
+    const calcInput = document.getElementById('calc-input');
+    const calcAnswers = document.getElementById('calc-answers');
+    const calcSpacer = document.getElementById('calc-spacer');
+    const modeBtn = document.getElementById('calc-mode-btn');
+
+    calcInput.addEventListener('focus', () => {
+        if (!calcActivated) {
+            calcActivated = true;
+            calcAnswers.classList.remove('hidden');
+            calcSpacer.classList.remove('hidden');
+
+            setTimeout(() => {
+                calcInput.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 80);
+        }
+    });
+
+    calcInput.addEventListener('input', () => {
+        calcInput.style.height = 'auto';
+        calcInput.style.height = calcInput.scrollHeight + 'px';
+        evaluateInput();
+    });
+
+    modeBtn.addEventListener('click', () => {
+        modePrecise = !modePrecise;
+        modeBtn.textContent = modePrecise ? 'Switch to 3 Digits' : 'Switch to Precise';
+        evaluateInput();
+    });
+
+    function evaluateInput() {
+        const text = calcInput.value.trim();
+        if (!text) {
+            ['rub', 'rsd', 'eur', 'usd', 'kzt'].forEach(c => {
+                const el = document.getElementById('val-' + c);
+                if (el) el.textContent = '0.00';
+            });
+            return;
+        }
+
+        try {
+            const tokens = tokenize(text);
+            const sanitized = sanitizeTokens(tokens);
+            const rpn = shuntingYard(sanitized);
+            const result = evaluateRPN(rpn, RATES_DATA.conversion_rates);
+            updateUI(result);
+        } catch (e) {
+            console.error("Evaluation error", e);
+        }
+    }
+
+    function updateUI(result) {
+        const outputCurrencies = ['rub', 'rsd', 'eur', 'usd', 'kzt'];
+
+        if (!result.isMoney) {
+            outputCurrencies.forEach(c => {
+                const el = document.getElementById('val-' + c);
+                if (el) el.textContent = formatThreeDigits(result.value);
+            });
+            return;
+        }
+
+        const usdVal = convertTo(RATES_DATA.conversion_rates, result.value, result.currency, 'usd');
+
+        for (let cur of outputCurrencies) {
+            const val = convertTo(RATES_DATA.conversion_rates, usdVal, 'usd', cur);
+            const el = document.getElementById('val-' + cur);
+            if (el) {
+                el.textContent = modePrecise ? formatPrecise(val) : formatThreeDigits(val);
+            }
+        }
+    }
+</script>
