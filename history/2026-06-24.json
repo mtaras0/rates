@@ -1,0 +1,76 @@
+{
+  "USD-bank": {
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.009731413001167769,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ]
+  },
+  "EUR-bank": {
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.008479803708595397,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ]
+  },
+  "KZT-bank": {
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 4.7381276752608965,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ],
+    "USD-crypto": [
+      {
+        "name": "Bybit P2P",
+        "rate": 510.53285714285715,
+        "direct": true,
+        "updates_amount": 1
+      }
+    ]
+  },
+  "RUB-bank": {
+    "RSD-bank": [
+      {
+        "name": "Visa Payment",
+        "rate": 0.7135127804666815,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ],
+    "USD-crypto": [
+      {
+        "name": "Bybit P2P",
+        "rate": 76.30999999999999,
+        "direct": false,
+        "updates_amount": 1
+      }
+    ]
+  },
+  "USD-crypto": {
+    "RUB-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 85.67,
+        "direct": true,
+        "updates_amount": 1
+      }
+    ],
+    "KZT-bank": [
+      {
+        "name": "Bybit P2P",
+        "rate": 512.3,
+        "direct": true,
+        "updates_amount": 1
+      }
+    ]
+  }
+}
