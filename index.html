@@ -138,7 +138,7 @@
     <pre style="margin:0; text-align:left;">──────────────────────────────────────────
       28     04     11     18     25
 
-                               1.16   
+                                  1.16
 <span class="accent"> ₽→D  <span class="graph">▃▁▂▃▂▂▁▁▁▂▂▂▂▃▅▆▆▆▆▇▇▇████████</span> 1.16</span>
            1.11                       
 
@@ -147,15 +147,15 @@
                                101    
 <span class="accent"> ₽←€  <span class="graph">▃▂▂▂▂▂▁▁▁▂▂▂▂▃▅▆▆▆▇▇▇▇████████</span> 101</span>
            106                        
-      P2P -10%92.0   Korona -6% 96.0
+      P2P -10%92.4   Korona -6% 96.0
 ──────────────────────────────────────────
                                88.1   
 <span class="accent"> ₽←$  <span class="graph">▄▃▃▃▃▃▁▂▃▃▃▃▃▄▆▇▇▇▇▇▇▆▇▇▇▇█▇▆▆</span> 89.0</span>
            91.4                       
-      P2P -10%81.0    Forex -5% 84.9
+      P2P -9% 81.3    Forex -5% 84.9
 ────────────────────────────────────────── 
       ₸←D    ₽→₸ bank  ₽→₸ P2P   ₸←$     
-<span class="accent">      4.31     5.00     5.51     439    </span>
+<span class="accent">      4.28     5.00     5.48     439    </span>
 
       D—€ 116.90/118.40   D←$ 102.65
 ──────────────────────────────────────────
@@ -164,7 +164,7 @@
 <span class="accent"> EUR  <span class="graph">▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▄▄▄▄▄▄▄▄▄</span> NEER</span>
 <span class="accent"> RUB  <span class="graph">▆▃▃▃▃▃▂▁▁▃▁▁▂▂▄▆▆▆▇▇▇█▇▇█▇█▇▇▇</span></span>
 ──────────────────────────────────────────
-           Updated: 25.09 04:06
+           Updated: 25.09 04:21
            </pre>
 
     <textarea id="calc-input" rows="1" placeholder="Type conversion or calculation..."></textarea>
@@ -200,7 +200,7 @@
 </div>
 
 <script>
-    const RATES_DATA = {"rub2rsd": {"bank": {"current": 1.1601887216355877, "sparkline_full": "                           1.16   \n  ▃▁▂▃▂▂▁▁▁▂▂▂▂▃▅▆▆▆▆▇▇▇████████  \n       1.11                       "}, "korona": {"current": 1.2181428550409168, "diff_percent": 4.995233303391163}, "crypto": {"current": 1.2780198428975615, "diff_percent": 10.156202957727446}, "forex": {"current": 1.2158474326618143, "diff_percent": 4.797384252086257}}, "rub2eur": {"bank": {"current": 0.009871668311944718, "sparkline_full": "                           101    \n  ▃▂▂▂▂▂▁▁▁▂▂▂▂▃▅▆▆▆▇▇▇▇████████  \n       106                        "}, "korona": {"current": 0.010420383704370545, "diff_percent": 5.55848692527362}, "crypto": {"current": 0.010874987912234466, "diff_percent": 10.163627550935143}, "forex": {"current": 0.010340094485461766, "diff_percent": 4.745157137727688}}, "rub2usd": {"bank": {"current": 0.011233430689732645, "sparkline_full": "                           88.1   \n  ▄▃▃▃▃▃▁▂▃▃▃▃▃▄▆▇▇▇▇▇▇▆▇▇▇▇█▇▆▆  \n       91.4                       "}, "korona": {"current": 0.01165965881829066, "diff_percent": 3.794282800423455}, "crypto": {"current": 0.012350182460867169, "diff_percent": 9.941324266639526}, "forex": {"current": 0.011777772281484047, "diff_percent": 4.845728849770977}}, "xdr": {"rub2xdr": {"current_rate": 0.008622610157351846, "sparkline": "▅▃▂▃▂▂▁▁▂▃▂▂▃▄▆▇▇▇▇▇▇▇▇▇▇██▇▆▆"}, "usd2xdr": {"current_rate": 0.732916, "sparkline": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▅"}, "eur2xdr": {"current_rate": 0.8339005189435443, "sparkline": "▇▆▅▅▆▆▅▆▆▆▆▆▆▆▆▆▆▆▅▅▄▃▃▄▄▄▄▃▂▂"}, "cny2xdr": {"current_rate": 0.10920300975936824, "sparkline": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▅▅▅▅"}, "rsd2xdr": {"current_rate": 0.007091852090746825, "sparkline": "▇▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▅▅▅▄▄▄▄▄▄▃▂▂"}}, "neer": {"rub": {"current_rate": 91.06110858552205, "sparkline": "▆▃▃▃▃▃▂▁▁▃▁▁▂▂▄▆▆▆▇▇▇█▇▇█▇█▇▇▇"}, "usd": {"current_rate": 103.12025774494487, "sparkline": "▃▃▅▅▄▄▄▃▃▄▄▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆"}, "eur": {"current_rate": 108.47792077334373, "sparkline": "▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▄▄▄▄▄▄▄▄▄"}, "cny": {"current_rate": 113.26407803397157, "sparkline": "▄▄▃▃▅▅▅▄▄▃▃▄▄▃▄▄▃▃▄▅▅▆▆▄▄▆▆▄▅▅"}, "rsd": {"current_rate": 109.92872038581153, "sparkline": "██▂▂▇█▇▇▇▂▂▇▇▇█▇▂▂▆▇▇▇▇▁▁▇▅▁▁▁"}}, "specific_rates": {"rub_kzt_bank": 5.0, "rub_kzt_crypto": 5.508181377546757, "kzt_rsd_bank": 0.23202210590000003, "rsd_eur_cash": 0.008445945945945945, "eur_rsd_cash": 116.9, "rsd_usd_cash": 0.009571667863125148, "usd_rsd_cash": 100.81666666666666, "eur_usd_exch": 1.1377845741443007, "usd_kzt_bank": 439.0}, "conversion_rates": {"rub_usd": {"rub_to_usd": [0.011233430689732645, 0.0111731843575419], "usd_to_rub": [82.14, 83.0]}, "rub_eur": {"rub_to_eur": [0.009871668311944718, 0.00983284169124877], "eur_to_rub": [93.36, 95.3]}, "rub_kzt": {"rub_to_kzt": [5.0, 4.952947003467063], "kzt_to_rub": [0.1869158878504673, 0.1866]}, "rub_rsd": {"rub_to_rsd": [1.2280606031], "rsd_to_rub": [0.8142920613817385]}, "usd_eur": {"usd_to_eur": [0.8714596949891068], "eur_to_usd": [1.1275]}, "usd_kzt": {"usd_to_kzt": [439.0], "kzt_to_usd": [0.002242152466367713]}, "usd_rsd": {"usd_to_rsd": [103.28], "rsd_to_usd": [0.009682416731216111]}, "eur_kzt": {"eur_to_kzt": [499.5], "kzt_to_eur": [0.0019743336623889436]}, "eur_rsd": {"eur_to_rsd": [118.3484336411], "rsd_to_eur": [0.008449625983496923]}, "kzt_rsd": {"kzt_to_rsd": [0.23202210590000003], "rsd_to_kzt": [4.309934159596816]}, "eur_usd_forex": {"eur_to_usd": [1.1377845741443007], "usd_to_eur": [0.878901]}}, "update_time": "2026-09-25 04:06:45", "update_time_display": "25.09 04:06"};
+    const RATES_DATA = {"rub2rsd": {"bank": {"current": 1.1617614019321503, "sparkline_full": "                              1.16\n  ▃▁▂▃▂▂▁▁▁▂▂▂▂▃▅▆▆▆▆▇▇▇████████  \n       1.11                       "}, "korona": {"current": 1.2181428550409168, "diff_percent": 4.853100904798293}, "crypto": {"current": 1.2828496573949817, "diff_percent": 10.42281618768251}, "forex": {"current": 1.2154631555939357, "diff_percent": 4.622442574910209}}, "rub2eur": {"bank": {"current": 0.009871668311944718, "sparkline_full": "                           101    \n  ▃▂▂▂▂▂▁▁▁▂▂▂▂▃▅▆▆▆▇▇▇▇████████  \n       106                        "}, "korona": {"current": 0.010420383704370545, "diff_percent": 5.55848692527362}, "crypto": {"current": 0.010828083255205841, "diff_percent": 9.688483375235176}, "forex": {"current": 0.01034255176758523, "diff_percent": 4.770049405638382}}, "rub2usd": {"bank": {"current": 0.011233430689732645, "sparkline_full": "                           88.1   \n  ▄▃▃▃▃▃▁▂▃▃▃▃▃▄▆▇▇▇▇▇▇▆▇▇▇▇█▇▆▆  \n       91.4                       "}, "korona": {"current": 0.01165965881829066, "diff_percent": 3.794282800423455}, "crypto": {"current": 0.012296915176595872, "diff_percent": 9.467138902056444}, "forex": {"current": 0.011777772281484047, "diff_percent": 4.845728849770977}}, "xdr": {"rub2xdr": {"current_rate": 0.008622991398068524, "sparkline": "▅▃▂▃▂▂▁▁▂▃▂▂▃▄▆▇▇▇▇▇▇▇▇▇▇██▇▆▆"}, "usd2xdr": {"current_rate": 0.732916, "sparkline": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▅"}, "eur2xdr": {"current_rate": 0.8337392542809398, "sparkline": "▇▆▅▅▆▆▅▆▆▆▆▆▆▆▆▆▆▆▅▅▄▃▃▄▄▄▄▃▂▂"}, "cny2xdr": {"current_rate": 0.10920463688649164, "sparkline": "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▅▅▅▅▅▅▅"}, "rsd2xdr": {"current_rate": 0.007094407887547116, "sparkline": "▇▆▅▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▅▅▅▄▄▄▄▄▄▃▂▂"}}, "neer": {"rub": {"current_rate": 91.06110858552205, "sparkline": "▆▃▃▃▃▃▂▁▁▃▁▁▂▂▄▆▆▆▇▇▇█▇▇█▇█▇▇▇"}, "usd": {"current_rate": 103.12025774494487, "sparkline": "▃▃▅▅▄▄▄▃▃▄▄▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆"}, "eur": {"current_rate": 108.47792077334373, "sparkline": "▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▄▄▄▄▄▄▄▄▄"}, "cny": {"current_rate": 113.26407803397157, "sparkline": "▄▄▃▃▅▅▅▄▄▃▃▄▄▃▄▄▃▃▄▅▅▆▆▄▄▆▆▄▅▅"}, "rsd": {"current_rate": 109.92872038581153, "sparkline": "██▂▂▇█▇▇▇▂▂▇▇▇█▇▂▂▆▇▇▇▇▁▁▇▅▁▁▁"}}, "specific_rates": {"rub_kzt_bank": 5.0, "rub_kzt_crypto": 5.484424168761759, "kzt_rsd_bank": 0.233907812, "rsd_eur_cash": 0.008445945945945945, "eur_rsd_cash": 116.9, "rsd_usd_cash": 0.009571667863125148, "usd_rsd_cash": 100.81666666666666, "eur_usd_exch": 1.137564542568234, "usd_kzt_bank": 439.0}, "conversion_rates": {"rub_usd": {"rub_to_usd": [0.011233430689732645, 0.0111731843575419], "usd_to_rub": [82.14, 83.0]}, "rub_eur": {"rub_to_eur": [0.009871668311944718, 0.00983284169124877], "eur_to_rub": [93.36, 95.3]}, "rub_kzt": {"rub_to_kzt": [5.0, 4.952947003467063], "kzt_to_rub": [0.1869158878504673, 0.1866]}, "rub_rsd": {"rub_to_rsd": [1.2233206717], "rsd_to_rub": [0.8174471527652188]}, "usd_eur": {"usd_to_eur": [0.8714596949891068], "eur_to_usd": [1.1275]}, "usd_kzt": {"usd_to_kzt": [439.0], "kzt_to_usd": [0.002242152466367713]}, "usd_rsd": {"usd_to_rsd": [103.42000000000002], "rsd_to_usd": [0.009669309611293753]}, "eur_kzt": {"eur_to_kzt": [499.5], "kzt_to_eur": [0.0019743336623889436]}, "eur_rsd": {"eur_to_rsd": [117.89868210120001], "rsd_to_eur": [0.008481859018081609]}, "kzt_rsd": {"kzt_to_rsd": [0.233907812], "rsd_to_kzt": [4.275188551633325]}, "eur_usd_forex": {"eur_to_usd": [1.137564542568234], "usd_to_eur": [0.879071]}}, "update_time": "2026-09-25 04:21:50", "update_time_display": "25.09 04:21"};
 
     const currencyMap = {
         'rub': 'rub', 'r': 'rub', 'руб': 'rub', 'р': 'rub', '\u20BD': 'rub',
