@@ -3,9 +3,9 @@
     "RSD-bank": [
       {
         "name": "Visa Payment",
-        "rate": 0.009548623218582948,
+        "rate": 0.009548704598154656,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-bank": [
@@ -43,9 +43,9 @@
     "RSD-bank": [
       {
         "name": "Visa Payment",
-        "rate": 0.008483903940459408,
+        "rate": 0.008483787695146329,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-bank": [
@@ -83,17 +83,17 @@
     "RSD-bank": [
       {
         "name": "Visa Payment",
-        "rate": 4.2877276780234626,
+        "rate": 4.287846038254438,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 466.98241269841276,
+        "rate": 467.04128728414446,
         "direct": true,
-        "updates_amount": 90
+        "updates_amount": 91
       }
     ],
     "RUB-bank": [
@@ -131,17 +131,17 @@
     "RSD-bank": [
       {
         "name": "Visa Payment",
-        "rate": 0.7738170405707109,
+        "rate": 0.7736782901272099,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "USD-crypto": [
       {
         "name": "Bybit P2P",
-        "rate": 82.04334920634919,
+        "rate": 82.04863422291993,
         "direct": false,
-        "updates_amount": 90
+        "updates_amount": 91
       }
     ],
     "USD-bank": [
@@ -191,17 +191,17 @@
     "RUB-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 93.94442857142856,
+        "rate": 93.9285557299843,
         "direct": true,
-        "updates_amount": 90
+        "updates_amount": 91
       }
     ],
     "KZT-bank": [
       {
         "name": "Bybit P2P",
-        "rate": 480.0586666666665,
+        "rate": 480.2668445839873,
         "direct": true,
-        "updates_amount": 90
+        "updates_amount": 91
       }
     ]
   },
@@ -209,33 +209,33 @@
     "RSD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 104.85206557142858,
+        "rate": 104.868430125,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "GBP-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.7470902857142858,
+        "rate": 0.7471810000000001,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "CNY-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 6.674264285714285,
+        "rate": 6.674231249999999,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 81.23100042857143,
+        "rate": 81.15860750000002,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       },
       {
         "name": "MOEX Indicative",
@@ -249,31 +249,31 @@
         "name": "OpenExchangeRates",
         "rate": 0.7329160000000001,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "EUR-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.8922677142857144,
+        "rate": 0.8923952500000001,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "JPY-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 156.82134326714282,
+        "rate": 156.82400035874997,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "KZT-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 449.7226082857142,
+        "rate": 450.26727837499993,
         "direct": true,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ]
   },
@@ -281,9 +281,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 104.85206557142858,
+        "rate": 104.868430125,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ]
   },
@@ -291,9 +291,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.7470902857142858,
+        "rate": 0.7471810000000001,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
@@ -309,9 +309,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 6.674264285714285,
+        "rate": 6.674231249999999,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
@@ -327,9 +327,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 81.23100042857143,
+        "rate": 81.15860750000002,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       },
       {
         "name": "MOEX Indicative",
@@ -385,7 +385,7 @@
         "name": "OpenExchangeRates",
         "rate": 0.7329160000000001,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ]
   },
@@ -393,9 +393,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 0.8922677142857144,
+        "rate": 0.8923952500000001,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
@@ -411,9 +411,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 156.82134326714282,
+        "rate": 156.82400035874997,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
@@ -429,9 +429,9 @@
     "USD-forex": [
       {
         "name": "OpenExchangeRates",
-        "rate": 449.7226082857142,
+        "rate": 450.26727837499993,
         "direct": false,
-        "updates_amount": 7
+        "updates_amount": 8
       }
     ],
     "RUB-forex": [
